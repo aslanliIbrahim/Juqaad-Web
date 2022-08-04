@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
-    var dataText = [ "sales.", "leads.", "revune."];
-    
+    var dataText = [ "Satışa", "Leads-ə", "Sadiq müştəriyə"];
     // type one text in the typwriter
     // keeps calling itself until the text is finished
     function typeWriter(text, i, fnCallback) {
       // chekc if text isn't finished yet
       if (i < (text.length)) {
         // add next character to h1
-       document.querySelector("p").innerHTML ='<p>Beautiful websites that convert to </p>'+ text.substring(0, i+1);
-  
+       document.querySelector("p").innerHTML = text.substring(0, i+1) +'<span>  &nbsp çevirən rəqibsiz saytlar.</span>';
+       document.querySelector("p").classList.add('add')
+       document.querySelector("p span").classList.add('test2')
         // wait for a while and call this function again for next character
         setTimeout(function() {
           typeWriter(text, i + 1, fnCallback)

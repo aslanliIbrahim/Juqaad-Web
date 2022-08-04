@@ -27,7 +27,6 @@
 .up-side{
     color: var(--white);
     /* font-size: 5em;  */
-    text-transform: uppercase;
     font-size: 70px;
     line-height: 55PX;
     font-weight: 900;
@@ -132,13 +131,13 @@
     transition: 0.2s ease-in-out;
 
 }
-.item-details > .item > img{
-    width: 50%;
+.item-details > .item > a > img{
+    width: 100%;
 }
 .item-details > .item:hover{
-    background-color: var(--blue);
-    backdrop-filter: blur(10px);
-    cursor: pointer;
+  opacity: 0.7;
+  cursor: pointer;
+    
 }
 .webCustom{
     color: var(--light-blue);
@@ -205,8 +204,12 @@
 #customerMagnet > .container > .row > .left-side >h3::before{
     content:url('https://p3w9u6d6.rocketcdn.me/wp-content/uploads/2021/02/Lines.png'); 
     position:absolute;
-    left:-109px;
+    left: -76px;
     background-repeat: no-repeat;
+}
+.trustedBy{
+    color: #D1011A;
+
 }
 @media only screen and (max-width: 576px){
     #customerMagnet > .container > .row > .left-side >h3{
@@ -296,4 +299,10 @@
 }
 .blueColor{
     color: var(--h3blue);
+}
+.add{
+    color: red ;
+}
+.test2{
+    color: white;
 }

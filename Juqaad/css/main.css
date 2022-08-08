@@ -266,8 +266,12 @@
 #customerMagnet > .container > .row > .left-side >h3::before{
     content:url('https://p3w9u6d6.rocketcdn.me/wp-content/uploads/2021/02/Lines.png'); 
     position:absolute;
-    left: -76px;
+    left: -397px;
+    top: 3416px;
     background-repeat: no-repeat;
+}
+.parterns-img > img{
+    object-fit: contain;
 }
 .trustedBy{
     color: #D1011A;
@@ -358,6 +362,7 @@
 .writingSide{
     color: var(--h3blue);
     font-size: 34px;
+    font-weight: 900;
 }
 .blueColor{
     color: var(--h3blue);
@@ -366,5 +371,5 @@
     color: red ;
 }
 .test2{
-    color: white;
+    color: white !important;
 }
